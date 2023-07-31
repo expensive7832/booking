@@ -19,7 +19,7 @@ function Home() {
 
   useEffect(() =>{
 
-    axios.get("http://localhost:8000/getdepartment")
+    axios.get("https://expensive7832.pythonanywhere.com/getdepartment")
     .then((response) => setDpt(response.data))
     .catch((err) => console.log(err))
 
@@ -34,7 +34,7 @@ function Home() {
     
     const onSuccess = (reference) => {
       // Implementation for whatever you want to do with reference and after success call.
-      axios.post("http://localhost:8000/appointment/", {
+      axios.post("https://expensive7832.pythonanywhere.com/appointment/", {
         name,
         email,
         choosen_time,
